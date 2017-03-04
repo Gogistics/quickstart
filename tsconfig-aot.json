@@ -7,13 +7,17 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "lib": ["es2015", "dom"],
-    "noImplicitAny": true,
+    "noImplicitAny": false, // set to true for D3 demo
     "suppressImplicitAnyIndexErrors": true
   },
 
   "files": [
     "src/app/app.module.ts",
     "src/main.ts"
+  ],
+
+  "typeRoots": [
+    "../node_modules/@types"
   ],
 
   "angularCompilerOptions": {
